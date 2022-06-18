@@ -12,8 +12,7 @@ public class backjoon_15596_method {
 
     public static void main(String[] args) {
         int[] test = {1,2,3,4,5};
-
-        sum(test);
+        System.out.println("test = " + sum(test));;
     }
 }
 
