@@ -2,7 +2,7 @@ package com.algorithmStudy.backjoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class backjoon_10818_one_dimensional_array{
+public class backjoon_10818_oneDimensionalArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
