@@ -6,20 +6,20 @@ public class backjoon_10818_oneDimensionalArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int count = Integer.parseInt(scanner.nextLine());
-        String stringParam = scanner.nextLine();
+        //숫자의 갯수가 주어진다.
+        int param = scanner.nextInt();
 
-        scanner.close();
-
-        String[] strings = stringParam.split(" ");
-        int [] ints = new int[count];
+        int [] ints = new int[param];
 
         for (int i = 0; i < ints.length; i++) {
-            ints[i] = Integer.parseInt(strings[i]);
+            //공백을 기준으로 입력되는 숫자들을 하나씩 배열에 할당한다.
+            ints[i] = scanner.nextInt();
         }
 
         Arrays.sort(ints);
 
-        System.out.println(ints[0] + " " + ints[count-1]);
+        scanner.close();
+
+        System.out.println(ints[0] + " " + ints[param-1]);
     }
 }
