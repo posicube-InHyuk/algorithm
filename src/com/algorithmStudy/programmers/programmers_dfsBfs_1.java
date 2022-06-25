@@ -1,7 +1,7 @@
 package com.algorithmStudy.programmers;
 
 public class programmers_dfsBfs_1 {
-
+    //Target Number
     static class Solution {
         //재귀함수 : 함수가 함수 내부에서 자기 자신을 호출하는 방식의 함수
         //조건이 지정돼있지 않으면 무한 루프 -> stack overflow 발생 : 종료 조건을 필수적으로 설정해줘야함

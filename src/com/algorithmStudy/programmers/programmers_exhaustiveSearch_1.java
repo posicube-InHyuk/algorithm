@@ -2,7 +2,7 @@ package com.algorithmStudy.programmers;
 
 import java.util.ArrayList;
 
-public class programmers_ExhaustiveSearch_1 {
+public class programmers_exhaustiveSearch_1 {
     //모의고사
     static class Solution {
         /*
