@@ -37,13 +37,11 @@ public class programmers_sort_1 {
             int [] result = new int[commands.length];
 
             for (int i = 0 ; i < commands.length ; i ++){
-                int[][] division = new int[commands.length][commands[i].length];
+                int[] division = Arrays.copyOfRange(array , commands[i][0] - 1 , commands[i][1]);
 
-                division[i] = Arrays.copyOfRange(array , commands[i][0] - 1 , commands[i][1]);
+                Arrays.sort(division);
 
-                Arrays.sort(division[i]);
-
-                result[i] = division[i][commands[i][2] -1 ];
+                result[i] = division[commands[i][2] -1 ];
 
             }
 
