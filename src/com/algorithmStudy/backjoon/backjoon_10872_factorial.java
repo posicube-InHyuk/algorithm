@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class backjoon_10872_factorial {
 
     static int factorialRecursion(int param) {
-        if (param == 1) {
+        if (param <= 1) {
             return 1;
         }
 
@@ -15,10 +15,9 @@ public class backjoon_10872_factorial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int param = scanner.nextInt();
+        scanner.close();
+        int result = factorialRecursion(param);
 
-        int solution1 = factorialRecursion(param);
-
-        System.out.println("solution1 = " + solution1);
-
+        System.out.println(result);
     }
 }
