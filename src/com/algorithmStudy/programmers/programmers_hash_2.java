@@ -5,7 +5,7 @@ public class programmers_hash_2 {
 
         public boolean solution(String[] phoneBook) {
             boolean answer = true;
-            
+
 
 
 
