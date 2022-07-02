@@ -3,6 +3,7 @@ package com.algorithmStudy.backjoon;
 import java.util.Scanner;
 
 public class backjoon_2562_oneDimensionalArray {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] array = new int[9];
@@ -20,6 +21,7 @@ public class backjoon_2562_oneDimensionalArray {
                 idx = i;
             }
         }
+
         System.out.println(max);
         System.out.println(idx + 1);
     }
