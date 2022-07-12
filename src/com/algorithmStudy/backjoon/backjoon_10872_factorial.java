@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class backjoon_10872_factorial {
 
     static int factorialRecursion(int param) {
-        if (param <= 1) {
-            return 1;
-        }
+        if (param <= 1) return 1;
 
         return param * factorialRecursion(param - 1);
+
     }
 
     public static void main(String[] args) {
