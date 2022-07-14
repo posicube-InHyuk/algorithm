@@ -9,14 +9,6 @@ public class InsertionSort {
     삽입 정렬의 시간복잡도는 최선의 경우 O(N) , 최악의 경우에는 O(N2)
     */
 
-    public static void main(String[] args) {
-        int[] arr = {9, 10, 7, 6, 8, 1, 5, 3, 4, 2};
-        insertionSort(arr);
-        for (int i : arr) {
-            System.out.println("i = " + i);
-        }
-    }
-
     static int[] insertionSort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
@@ -33,9 +25,21 @@ public class InsertionSort {
             }
             //위 while문에 걸리지 않으면 target의 정렬 위치가 확정됨을 의미 해당 위치에 할당해준다.
             arr[n + 1 ] = target;
+
+            // 정렬 과정 출력
+            System.out.print(i + " 번째 정렬 완료된 배열 : ");
+            for (int x : arr) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
         }
 
         return arr;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {9, 10, 7, 6, 8, 1, 5, 3, 4, 2};
+        insertionSort(arr);
     }
 
 }

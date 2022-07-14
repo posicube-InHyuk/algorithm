@@ -13,9 +13,13 @@ public class SelectionSort {
                     arr[j] = desc;
                 }
             }
-        }
-        for (int i : arr) {
-            System.out.println("sort Desc =" + i);
+
+            // 정렬 과정 출력
+            System.out.print("Desc : " + i + " 번째 정렬 완료된 배열 : ");
+            for (int x : arr) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
         }
     }
 
@@ -30,10 +34,13 @@ public class SelectionSort {
                     arr[j] = asc;
                 }
             }
-        }
 
-        for (int i : arr) {
-            System.out.println("sort Asc = " + i);
+            // 정렬 과정 출력
+            System.out.print("Asc : " + i + " 번째 정렬 완료된 배열 : ");
+            for (int x : arr) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
         }
     }
 
