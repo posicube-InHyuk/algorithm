@@ -16,7 +16,7 @@ public class ConcurrentIssueExample {
                 // 1. 현재 sharedResource 값을 1000번 증가시킴
                 for (int i = 0; i < 1000; i++) {
                     sharedResource++;
-//                    System.out.println(i + " 번째 반복 sharedResource : " + sharedResource);
+                    System.out.println(i + " 번째 반복 sharedResource : " + sharedResource);
                     /*  기대 값
                         1, 2, 3, 4, 5, ..., 999, 1000
                     */

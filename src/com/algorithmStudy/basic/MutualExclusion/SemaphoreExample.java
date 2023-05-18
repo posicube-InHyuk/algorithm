@@ -9,6 +9,10 @@ public class SemaphoreExample {
         // 세마포어 카운트
         private static int count;
 
+        public static int getCount() {
+            return count;
+        }
+
         // 임계 영역: 공유 자원(count)을 제어하는 acquire 메서드 세마포어 값을 감소시킴
         // p 연산
         public synchronized void acquire() throws InterruptedException {
@@ -52,11 +56,13 @@ public class SemaphoreExample {
                 @Override
                 public void run() {
                     try {
+                        System.out.println(semaphore.getCount());
                         semaphore.acquire(); // 세마포어로부터 리소스를 획득
                         useResource(); // 리소스 사용
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } finally {
+                        System.out.println(semaphore.getCount());
                         semaphore.release(); // 세마포어에 리소스 반납
                     }
                 }

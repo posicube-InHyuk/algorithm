@@ -2,7 +2,7 @@ package com.algorithmStudy.basic.MutualExclusion;
 public class MutexExample {
 
     // 1. Mutex 선언
-    private final Object mutex = new Object();
+    private final Object lock = new Object();
     private int sharedResource = 0;
 
     public static void main(String[] args) throws InterruptedException {
@@ -20,7 +20,7 @@ public class MutexExample {
                        점유 대기와 순환 대기 상태는 발생하지 않음
                 */
                 // 한 프로세스 내부에서 하나의 스레드만 mutex 객체에 접근 가능하게한다.
-                synchronized (mutex) {
+                synchronized (lock) {
                     for (int i = 0; i < 1000; i++) {
                         sharedResource++;
                         System.out.println(i + " 번째 반복 sharedResource : " + sharedResource);
@@ -32,7 +32,7 @@ public class MutexExample {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                synchronized (mutex) {
+                synchronized (lock) {
                     for (int i = 0; i < 1000; i++) {
                         sharedResource--;
                         System.out.println(i + " 번째 반복 sharedResource : " + sharedResource);
