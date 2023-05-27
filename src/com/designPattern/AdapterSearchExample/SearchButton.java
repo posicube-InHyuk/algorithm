@@ -1,4 +1,4 @@
-package com.designPattern.Strategy.Strategy;
+package com.designPattern.AdapterSearchExample;
 
 public class SearchButton {
     private MyProgram myProgram;
