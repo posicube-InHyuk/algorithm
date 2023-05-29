@@ -8,20 +8,24 @@ public class Main {
         2. 대표적인 Dynamic Programming 예제인 Fibonacci 수열을 구현한다.
         FibonacciNaive : Dynamic Programming을 적용하지 않음
         FibonacciRecursive : Top Down 방식의 Dynamic Programming을 적용
-
     */
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
 
 //        Fibonacci fibonacci = new FibonacciNaive();
-//        Fibonacci fibonacci = new FibonacciRecursiveTopDown();
-        Fibonacci fibonacci = new FibonacciBottomUp();
+        Fibonacci fibonacci = new FibonacciRecursiveTopDown();
+//        Fibonacci fibonacci = new FibonacciBottomUp();
 
-//        stopWatch.start();
+        stopWatch.start();
+        // Naive    : 45 / 3488 ms   시/공간 O(2^n)
+        // TopDown  : 45 / 13   ms   [ 100000 : StackOverflowError ] -> 시간 복잡도 O(n)                                   / 공간복잡도가 점점 증가하는 방식 O(n) -> O(n^2) -> O(2^n)
+        // BottomUp : 45 / 15   ms   [ 100000 : 19 ms ]              -> 시간복잡도가 점점 증가하는 방식 O(n) -> O(n^2) -> O(2^n) / 공간 복잡도 O(n) , O(1)
+        // Call Stack : 호출해야할 메서드들이 정의된 영역 , 메서드들이 실행중에 사용하는 메모리 영역 [ Stack ]
+
         int fibonacciTest = fibonacci.fibonacci(10000);
         System.out.println("fibonacciTest = " + fibonacciTest);
-//        stopWatch.stop();
-//        System.out.println("수행시간: " + stopWatch.getTime() + " ms");
+        stopWatch.stop();
+        System.out.println("수행시간: " + stopWatch.getTime() + " ms");
 
         equalsTest();
     }

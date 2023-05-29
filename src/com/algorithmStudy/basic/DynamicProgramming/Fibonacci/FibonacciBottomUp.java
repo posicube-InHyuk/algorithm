@@ -13,6 +13,8 @@ public class FibonacciBottomUp implements Fibonacci {
     public int fibonacci(int n) {
         if (n == 0 || n == 1) return n;
 
+        // 2 ~ n+1 까지의 배열을 만들어준다.
+
         IntStream.range(2, n + 1)
                 .forEach(x -> {
                     int y = fibonacciList.get(x - 1) + fibonacciList.get(x - 2);

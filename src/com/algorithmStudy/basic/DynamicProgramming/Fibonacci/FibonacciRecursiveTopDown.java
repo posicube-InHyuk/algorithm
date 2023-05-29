@@ -16,10 +16,9 @@ class FibonacciRecursiveTopDown implements Fibonacci {
         fibonacciList.add(result);
 
         // JVM Heap Memory Monitoring And Algorithm Hint
-        // Runtime.getRuntime().gc();
-        // long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-        // System.out.println("used Memory : " + usedMemory + "Bytes ");
-        // System.out.println(count++);
+         Runtime.getRuntime().gc();
+         long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+         System.out.println("used Memory : " + usedMemory + "Bytes ");
 
         return result;
 
