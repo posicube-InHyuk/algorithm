@@ -1,7 +1,6 @@
 package com.algorithmStudy.Test.programmers.beforeEmployment;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 
 public class programmers_hash_1 {

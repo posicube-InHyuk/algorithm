@@ -53,8 +53,11 @@ public class programmers_ponketmon_01 {
     static class OtherDeveloperSolution {
         public int solution(int[] nums) {
             return Arrays.stream(nums)
+                    // 각 정수를 해당하는 래퍼 클래스로 변환하여 스트림을 생성합니다. (Boxing)
                     .boxed()
+                    // 중복을 제거한 후 Set으로 수집합니다.
                     .collect(Collectors.collectingAndThen(Collectors.toSet(),
+                            // 중복 제거된 요소의 개수와 배열 길이의 절반 중 작은 값을 반환합니다.
                             phonekemons -> Integer.min(phonekemons.size(), nums.length / 2)));
         }
     }
