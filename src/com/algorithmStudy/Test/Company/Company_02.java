@@ -3,7 +3,7 @@ package com.algorithmStudy.Test.Company;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Ai {
+public class Company_02 {
     static class Solution{
         public static int solution(String pharse) {
             // 1. 문자열을 배열로 쪼갠다.
