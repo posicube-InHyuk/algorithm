@@ -34,9 +34,6 @@ public class programmers_coordinate_18 {
         return 0;
     }
 
-    public static int solution_2(int[] dot){
-    }
-
     public static void main(String[] args) {
         int result = solution_1(new int[]{1, 1});
         System.out.println("result = " + result);
