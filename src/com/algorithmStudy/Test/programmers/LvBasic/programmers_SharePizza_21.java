@@ -23,9 +23,9 @@ public class programmers_SharePizza_21 {
 
 
     public static void main(String[] args) {
-        int result = solution(7);
+//        int result = solution(7);
 //        int result = solution(1);
-//        int result = solution(15);
+        int result = solution(15);
         System.out.println("solution = " + result);
     }
 }
