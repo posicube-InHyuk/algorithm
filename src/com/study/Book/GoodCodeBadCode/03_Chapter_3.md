@@ -1,6 +1,6 @@
-# Chapter_2 추상화 계층
+# Chapter_3 다른 개발자와 코드 계약
 
 ---
 
-https://backenddev-plo.notion.site/01_Chapter-2-2467ee5a92c3490989088b0d69b9f1cd?pvs=4
+https://backenddev-plo.notion.site/03_Chapter-3-2714c4d3f74647faa6e970167b363ef1?pvs=4
 
